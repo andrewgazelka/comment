@@ -1,11 +1,12 @@
-use comment::Comment;
 use linked_hash_map::Entry;
-use yaml_rust::yaml::{CommentedYaml, Comments};
-use yaml_rust::Yaml;
-
 use serde::Serialize;
 pub use serde_yaml;
 use serde_yaml::SerializerToYaml;
+pub use yaml_rust as yaml;
+use yaml_rust::yaml::{CommentedYaml, Comments};
+use yaml_rust::Yaml;
+
+use comment::Comment;
 
 struct Ser<'a> {
     yaml: &'a mut Yaml,
