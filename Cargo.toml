@@ -1,0 +1,10 @@
+[workspace]
+members = ["comment", "comment-derive", "example", "comment-yaml"]
+
+[patch.crates-io.yaml-rust]
+git = "https://github.com/Genomicsplc/yaml-rust/"
+branch = "support-comments"
+
+[patch.crates-io.serde_yaml]
+git = "https://github.com/andrewgazelka/serde-yaml"
+branch = "dev"
